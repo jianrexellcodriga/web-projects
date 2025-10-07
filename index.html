@@ -37,8 +37,15 @@
       border-radius: 20px;
       padding: 40px;
       width: 250px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 40px 30px rgba(31, 38, 135, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
       transition: transform 0.3s, background 0.3s;
+      /* Apply backdrop-filter for blur and the SVG distortion */
+      backdrop-filter: url(#liquid-distortion) blur(8px) saturate(180%);
+      -webkit-backdrop-filter: url(#liquid-distortion) blur(8px) saturate(180%);
+  
+      /* Needed to correctly apply backdrop effects */
+      isolation: isolate;
     }
 
     .card:hover {

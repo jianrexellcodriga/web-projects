@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Mini Projects</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 250px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    a {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✨ JavaScript Mini Projects</h1>
+    <div class="cards">
+      <div class="card">
+        <h2>💡 Variables Project</h2>
+        <p>Learn about different JavaScript variable types.</p>
+        <a href="./js_variablesLab/index.html">Open Project</a>
+      </div>
+      <div class="card">
+        <h2>🎨 Color Changer</h2>
+        <p>Click to change colors and copy HEX codes easily.</p>
+        <a href="./js_ColorChanger/index.html">Open Project</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -74,5 +74,29 @@
       </div>
     </div>
   </div>
+
+
+  <!-- SVG Filter for the liquid distortion -->
+<svg style="position: absolute; display: none;">
+  <filter id="liquid-distortion">
+    <!-- feTurbulence creates a noise pattern that looks like liquid -->
+    <feTurbulence 
+      type="fractalNoise" 
+      baseFrequency="0.005 0.005" 
+      numOctaves="1" 
+      result="turbulence"
+    />
+    <!-- feDisplacementMap uses the noise to distort the content behind the card -->
+    <feDisplacementMap 
+      in2="turbulence" 
+      in="SourceGraphic" 
+      scale="50" 
+      xChannelSelector="R" 
+      yChannelSelector="G" 
+    />
+  </filter>
+</svg>
+  <!-- Link JavaScript at the bottom -->
+  <script src="./js_ColorChanger/animate.js" defer></script>
 </body>
 </html>

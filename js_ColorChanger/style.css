@@ -15,22 +15,24 @@ body {
   
   /* Frosted glass card */
   .glass-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(8px) saturate(180%);
-    -webkit-backdrop-filter: blur(8px)  saturate(180%);
-    border-radius: 20px;
-    box-shadow: 0 40px 30px rgba(31, 38, 135, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 40px 50px;
-    text-align: center;
-    color: #fff;
-    width: 340px;
-    transition: transform 0.2s ease;
-  }
+  /* Existing styles */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 40px 30px rgba(31, 38, 135, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px 50px;
+  text-align: center;
+  color: #fff;
+  width: 340px;
   
-  .glass-card:hover {
-    transform: scale(1.03);
-  }
+  /* Apply backdrop-filter for blur and the SVG distortion */
+  backdrop-filter: url(#liquid-distortion) blur(8px) saturate(180%);
+  -webkit-backdrop-filter: url(#liquid-distortion) blur(8px) saturate(180%);
+  isolation: isolate;
+  transition: none;
+}
+  
+
   
   /* Title */
   h1 {

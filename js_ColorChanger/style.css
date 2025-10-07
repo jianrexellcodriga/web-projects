@@ -10,7 +10,7 @@ body {
     margin: 0;
     transition: background-color 0.5s ease;
     flex-direction: column;
-    gap:10px;
+    gap:5%;
   }
   
   /* Frosted glass card */

@@ -1,0 +1,78 @@
+/* Simple card design with light blue theme */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9f2fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 380px;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .card-content {
+    padding: 20px 25px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: #0056b3;
+  }
+
+  .back-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #00d4ff;
+    color: #111;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .back-btn:hover {
+    background: #0ef;
+  }
+  
